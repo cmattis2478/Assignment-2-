@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stocks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stocks.html">Stocks</a></li>
+    <li><a href="dogs.html">Dogs</a></li>
+  </ul>
+</nav>
+
+<h1>Stocks</h1>
+
+<input id="ticker" placeholder="Enter ticker (e.g. AAPL)">
+<button onclick="lookupStock()">Lookup</button>
+
+<canvas id="chart"></canvas>
+
+<h2>Top 5 Reddit Stocks</h2>
+<table id="stockTable">
+  <tr>
+    <th>Ticker</th>
+    <th>Mentions</th>
+    <th>Sentiment</th>
+    <th>Trend</th>
+  </tr>
+</table>
+
+<div class="audio-box">
+  <p>Commands:</p>
+  <p>"Lookup MSFT"</p>
+
+  <button onclick="startAudio()">Turn On Audio</button>
+  <button onclick="stopAudio()">Turn Off Audio</button>
+</div>
+
+<script src="audio.js"></script>
+<script src="stocks.js"></script>
+
+</body>
+</html>
