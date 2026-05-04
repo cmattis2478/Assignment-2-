@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dogs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stocks.html">Stocks</a></li>
+    <li><a href="dog.html">Dogs</a></li>
+  </ul>
+</nav>
+
+<h1>Dogs</h1>
+
+<div class="swiper">
+  <div class="swiper-wrapper" id="dogImages"></div>
+</div>
+
+<div id="breedButtons"></div>
+
+<div id="breedInfo"></div>
+
+<div class="audio-box">
+  <p>Commands:</p>
+  <p>"Load dog breed bulldog"</p>
+
+  <button onclick="startAudio()">Turn On Audio</button>
+  <button onclick="stopAudio()">Turn Off Audio</button>
+</div>
+
+<script src="audio.js"></script>
+<script src="dogs.js"></script>
+
+</body>
+</html>
